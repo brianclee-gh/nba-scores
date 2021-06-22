@@ -16,12 +16,12 @@ function Scoreboard() {
     </li>
   );
 
-  const changeDate = (asdf) => {
-    if (asdf === 'yesterday') {
+  const changeDate = (day) => {
+    if (day === 'yesterday') {
       setDate(new Date(date.setDate(date.getDate() - 1)));
     }
 
-    if (asdf === 'tomorrow') {
+    if (day === 'tomorrow') {
       setDate(new Date(date.setDate(date.getDate() + 1)));
     }
 
